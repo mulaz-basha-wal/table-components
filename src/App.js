@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BasicSorting from "./BasicSorting";
+import BasicTable from "./BasicTable";
+import ExpandableTable from "./ExpandedRows";
+import SelectableRows from "./SelectableRows";
+import TablePagination from "./TablePagination";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <BasicTable />
+            <BasicSorting />
+            <SelectableRows />
+            <ExpandableTable />
+            <TablePagination />
+        </div>
+    );
 }
 
 export default App;
